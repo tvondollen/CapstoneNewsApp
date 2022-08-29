@@ -66,6 +66,54 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        iterateArticles(dummyArticles)
+
+        
+//        //looping through Article objects and assigning contents to TextViews
+//        var count = 0
+//
+//        for(item in binding.mainGroup.children) {
+//
+//            var contents = ""
+//
+//            val currentArticle = dummyArticles[count]
+//
+//            if (item is TextView) {
+//
+//                //adding content, checking if nullables == null
+//                if(currentArticle.source.id != null) {
+//                    contents += "${currentArticle.source.id}\n"
+//                }
+//
+//                contents += "${currentArticle.source.name}\n"
+//
+//                if(currentArticle.author != null) {
+//                    contents += "${currentArticle.author}\n"
+//                }
+//
+//                contents += "${currentArticle.title}\n" +
+//                        "${currentArticle.description}\n" +
+//                        "${currentArticle.url}\n"
+//
+//                if(currentArticle.urlToImage != null) {
+//                    contents += "${currentArticle.urlToImage}\n"
+//                }
+//
+//                contents += "${currentArticle.publishedAt}\n"
+//
+//
+//                item.text = contents
+//
+//            }
+//
+//            //increment counter
+//            count++
+//        }
+
+
+    }
+
+    private fun iterateArticles(arrayList: ArrayList<Article>) {
         //looping through Article objects and assigning contents to TextViews
         var count = 0
 
